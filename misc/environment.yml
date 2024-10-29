@@ -2,7 +2,7 @@ name: DTUMisc
 channels:
   - conda-forge
 dependencies:
-  - python>=3.9,<3.14
+  - python>=3.9,<3.12 # cannot be over 3.11 as dtumathtools doesn't support that.
   - numpy
   - scipy
   - matplotlib
@@ -10,5 +10,8 @@ dependencies:
   - notebook
   - pip
   - pip:
+      - statsmodels
+      - dtumathtools
       - pandas
+      - sympy
       - plotly
